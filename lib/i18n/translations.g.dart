@@ -6,18 +6,14 @@
 /// Locales: 2
 /// Strings: 4 (2 per locale)
 ///
-/// Built on 2024-02-15 at 12:26 UTC
+/// Built on 2024-02-23 at 10:35 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
 
-// Flutter imports:
 import 'package:flutter/widgets.dart';
-
-// Package imports:
 import 'package:slang/builder/model/node.dart';
 import 'package:slang_flutter/slang_flutter.dart';
-
 export 'package:slang_flutter/slang_flutter.dart';
 
 const AppLocale _baseLocale = AppLocale.en;

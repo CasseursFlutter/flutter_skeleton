@@ -1,22 +1,16 @@
-/// Simple class representing the user UID and email.
-class ExampleUser {
-  final String title;
-  final String first;
-  final String last;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  const ExampleUser({
-    required this.title,
-    required this.first,
-    required this.last,
-  });
+part 'example_user.freezed.dart';
+part 'example_user.g.dart';
 
-  static ExampleUser fromJson(Map<String, dynamic> json) {
-    return ExampleUser(
-      title: json['name']['title'],
-      first: json['name']['first'],
-      last: json['name']['last'],
-    );
-  }
+@freezed
+class ExampleUser with _$ExampleUser {
+  const factory ExampleUser({
+    required String title,
+    required String first,
+    required String last,
+  }) = _ExampleUser;
+
+  factory ExampleUser.fromJson(Map<String, Object?> json) =>
+      _$ExampleUserFromJson(json);
 }
-
-//TODO use freezed
