@@ -14,6 +14,11 @@ https://pub.dev/packages/go_router
 A reactive caching and data-binding framework.
 https://pub.dev/packages/riverpod
 
+### Freezed
+
+A code generator for data-classes/unions/pattern-matching/cloning.
+https://pub.dev/packages/freezed
+
 ### Dio
 
 A powerful HTTP networking package for Dart/Flutter.
